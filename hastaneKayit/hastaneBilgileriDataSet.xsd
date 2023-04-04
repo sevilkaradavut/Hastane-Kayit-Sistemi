@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="hastaneBilgileriDataSet" targetNamespace="http://tempuri.org/hastaneBilgileriDataSet.xsd" xmlns:mstns="http://tempuri.org/hastaneBilgileriDataSet.xsd" xmlns="http://tempuri.org/hastaneBilgileriDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="hastaneBilgileriConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="hastaneBilgileriConnectionString (Settings)" PropertyReference="ApplicationSettings.HastaneKayit.Properties.Settings.GlobalReference.Default.hastaneBilgileriConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="IsteklerTableAdapter" GeneratorDataComponentClassName="IsteklerTableAdapter" Name="Istekler" UserDataComponentName="IsteklerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hastaneBilgileriConnectionString (Settings)" DbObjectName="Istekler" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT sikayetTuru, ilgiliAlan, oy, yorum FROM Istekler</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="sikayetTuru" DataSetColumn="sikayetTuru" />
+              <Mapping SourceColumn="ilgiliAlan" DataSetColumn="ilgiliAlan" />
+              <Mapping SourceColumn="oy" DataSetColumn="oy" />
+              <Mapping SourceColumn="yorum" DataSetColumn="yorum" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="hastaneBilgileriDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="hastaneBilgileriDataSet" msprop:Generator_UserDSName="hastaneBilgileriDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Istekler" msprop:Generator_TableClassName="IsteklerDataTable" msprop:Generator_TableVarName="tableIstekler" msprop:Generator_TablePropName="Istekler" msprop:Generator_RowDeletingName="IsteklerRowDeleting" msprop:Generator_RowChangingName="IsteklerRowChanging" msprop:Generator_RowEvHandlerName="IsteklerRowChangeEventHandler" msprop:Generator_RowDeletedName="IsteklerRowDeleted" msprop:Generator_UserTableName="Istekler" msprop:Generator_RowChangedName="IsteklerRowChanged" msprop:Generator_RowEvArgName="IsteklerRowChangeEvent" msprop:Generator_RowClassName="IsteklerRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sikayetTuru" msprop:Generator_ColumnVarNameInTable="columnsikayetTuru" msprop:Generator_ColumnPropNameInRow="sikayetTuru" msprop:Generator_ColumnPropNameInTable="sikayetTuruColumn" msprop:Generator_UserColumnName="sikayetTuru" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ilgiliAlan" msprop:Generator_ColumnVarNameInTable="columnilgiliAlan" msprop:Generator_ColumnPropNameInRow="ilgiliAlan" msprop:Generator_ColumnPropNameInTable="ilgiliAlanColumn" msprop:Generator_UserColumnName="ilgiliAlan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="oy" msprop:Generator_ColumnVarNameInTable="columnoy" msprop:Generator_ColumnPropNameInRow="oy" msprop:Generator_ColumnPropNameInTable="oyColumn" msprop:Generator_UserColumnName="oy" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="yorum" msprop:Generator_ColumnVarNameInTable="columnyorum" msprop:Generator_ColumnPropNameInRow="yorum" msprop:Generator_ColumnPropNameInTable="yorumColumn" msprop:Generator_UserColumnName="yorum" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
